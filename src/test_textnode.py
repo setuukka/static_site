@@ -1,8 +1,8 @@
 import unittest
 
-from textnode import TextNode, TextType
+from textnode import TextNode, TextType, text_node_to_html_node
 from htmlnode import HTMLnode
-from converters import text_node_to_html_node
+
 
 
 class TestTextNode(unittest.TestCase):
@@ -76,6 +76,6 @@ class TestTextNode(unittest.TestCase):
 
 
 
-        
+
 if __name__ == "__main__":
     unittest.main()
