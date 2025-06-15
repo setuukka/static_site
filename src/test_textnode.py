@@ -1,7 +1,7 @@
 import unittest
 
 from textnode import TextNode, TextType
-
+from htmlnode import HTMLnode
 
 class TestTextNode(unittest.TestCase):
     def test_eq(self):
@@ -28,6 +28,8 @@ class TestTextNode(unittest.TestCase):
     def test_repr_output(self):
         node = TextNode("text", TextType.CODE, None)
         assert repr(node) == "TextNode('text', code, None)"
+
+
 
 
 
